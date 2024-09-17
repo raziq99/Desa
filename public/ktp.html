@@ -138,101 +138,116 @@
     </nav>
 
     <!-- Form KTP -->
-    <div class="container">
+    <div class="container mx-auto p-4">
       <form class="flex justify-center items-center">
-        <div class="md:bg-navbar mt-5 py-6 px-10 rounded-md lg:w-3/6">
-          <h1 class="text-center text-white text-2xl">KTP</h1>
-          <div class="md:flex">
-            <!-- Form Input -->
+        <div class="md:bg-navbar mt-5 py-6 px-10 rounded-md w-full lg:w-3/6">
+          <h1 class="text-center text-white text-2xl mb-6">Surat Nikah</h1>
+          <div class="flex flex-col md:flex-row gap-8">
+            <!-- Data Anda -->
             <div class="w-full">
+              <p class="text-white text-xl font-semibold mb-5">Data Anda:</p>
+
               <label for="nik" class="block text-base mb-1 text-white"
                 >NIK</label
               >
               <input
                 type="text"
                 id="nik"
-                class="rounded-md p-1 w-full md:w-10/12"
+                class="rounded-md p-2 mb-4 w-full"
                 placeholder="NIK"
               />
-              <label for="nama" class="block text-base mb-1 text-white"
+
+              <label for="namaLengkap" class="block text-base mb-1 text-white"
                 >Nama Lengkap</label
               >
               <input
                 type="text"
-                id="nama"
-                class="rounded-md p-1 w-full md:w-10/12"
+                id="namaLengkap"
+                class="rounded-md p-2 mb-4 w-full"
                 placeholder="Nama Lengkap"
               />
-              <label for="ttl" class="block text-base mb-1 text-white"
+
+              <label
+                for="tempatTanggalLahir"
+                class="block text-base mb-1 text-white"
                 >Tempat Tanggal Lahir</label
               >
               <input
                 type="text"
-                id="ttl"
-                class="rounded-md p-1 w-full md:w-10/12"
+                id="tempatTanggalLahir"
+                class="rounded-md p-2 mb-4 w-full"
                 placeholder="Tempat Tanggal Lahir"
               />
-              <label for="jenis_kelamin" class="block mb-1 text-white"
+
+              <label for="jenisKelamin" class="block mb-1 text-white"
                 >Jenis Kelamin</label
               >
               <select
-                id="jenis_kelamin"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5"
+                id="jenisKelamin"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 mb-4 w-full"
               >
                 <option value="Laki-Laki">Laki-Laki</option>
                 <option value="Perempuan">Perempuan</option>
               </select>
+
               <label for="alamat" class="block text-base mb-1 text-white"
                 >Alamat</label
               >
               <input
                 type="text"
                 id="alamat"
-                class="rounded-md p-5 w-full md:w-10/12"
+                class="rounded-md p-2 mb-4 w-full"
                 placeholder="Alamat"
               />
             </div>
 
-            <!-- Daftar Persyaratan -->
-            <div class="relative">
-              <h5 class="text-white mb-2">Berkas-berkas yang dibutuhkan:</h5>
-              <div class="mb-2">
-                <input
-                  id="surat-rt-rw"
-                  type="checkbox"
-                  class="w-4 h-4 border-gray-50"
-                />
-                <label for="surat-rt-rw" class="ms-2 text-white font-medium"
-                  >Surat pengantar RT/RW</label
-                >
-              </div>
-              <div class="mb-2">
-                <input
-                  id="fotocopy-ktp"
-                  type="checkbox"
-                  class="w-4 h-4 border-gray-50"
-                />
-                <label for="fotocopy-ktp" class="ms-2 text-white font-medium"
-                  >Fotocopy KTP</label
-                >
-              </div>
-              <div class="mb-2">
-                <input
-                  id="fotocopy-kk"
-                  type="checkbox"
-                  class="w-4 h-4 border-gray-50"
-                />
-                <label for="fotocopy-kk" class="ms-2 text-white font-medium"
-                  >Fotocopy Kartu Keluarga (KK)</label
-                >
-              </div>
-              <div class="mt-5 flex justify-center items-center">
-                <button
-                  class="bg-navbar md:bg-nav_hover hover:bg-button_hover text-white p-2.5 w-44 border-0 rounded-md shadow-md cursor-pointer"
-                >
-                  Ajukan
-                </button>
-              </div>
+            <!-- Data Pasangan -->
+          </div>
+
+          <!-- Informasi Pernikahan -->
+
+          <!-- Berkas-berkas yang dibutuhkan -->
+          <div class="mt-8">
+            <h5 class="text-white mb-4">Berkas-berkas yang dibutuhkan:</h5>
+            <div class="flex items-center mb-2">
+              <input
+                id="suratRT_RW"
+                type="checkbox"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="suratRT_RW" class="ml-2 text-white"
+                >Surat pengantar RT/RW</label
+              >
+            </div>
+
+            <div class="flex items-center mb-2">
+              <input
+                id="fotocopyKTP"
+                type="checkbox"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="fotocopyKTP" class="ml-2 text-white"
+                >Fotocopy KTP</label
+              >
+            </div>
+            <div class="flex items-center mb-4">
+              <input
+                id="fotocopyKK"
+                type="checkbox"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="fotocopyKK" class="ml-2 text-white"
+                >Fotocopy Kartu Keluarga (KK)</label
+              >
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="bg-nav_hover hover:bg-nav_hover text-white py-2 px-6 rounded-md shadow-md cursor-pointer"
+              >
+                Ajukan
+              </button>
             </div>
           </div>
         </div>
