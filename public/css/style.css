@@ -735,10 +735,6 @@ video {
   margin-right: auto;
 }
 
-.ms-2 {
-  margin-inline-start: 0.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -881,10 +877,6 @@ video {
   width: 10rem;
 }
 
-.w-44 {
-  width: 11rem;
-}
-
 .w-72 {
   width: 18rem;
 }
@@ -895,6 +887,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .max-w-6xl {
@@ -981,6 +977,10 @@ video {
   gap: 2rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-y-11 {
   row-gap: 2.75rem;
 }
@@ -1060,11 +1060,6 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-gray-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
-}
-
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
@@ -1140,10 +1135,6 @@ video {
 
 .p-0 {
   padding: 0px;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-2 {
@@ -1310,10 +1301,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-semibold {
@@ -1502,13 +1489,34 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:max-w-xl {
+    max-width: 36rem;
   }
 
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1554,10 +1562,6 @@ video {
     width: 33.333333%;
   }
 
-  .md\:w-10\/12 {
-    width: 83.333333%;
-  }
-
   .md\:w-auto {
     width: auto;
   }
@@ -1568,6 +1572,10 @@ video {
 
   .md\:max-w-md {
     max-width: 28rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1586,11 +1594,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:bg-nav_hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(51 111 108 / var(--tw-bg-opacity));
   }
 
   .md\:bg-navbar {
@@ -1644,6 +1647,11 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:opacity-100 {
